@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+    font-family: 'Gugi', cursive;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+}
+
+#gif {
+    font-size: 150px;
+    color: limegreen;
+    text-align: left;
+}
+
+#tastic {
+    font-size: 150px;
+    color: purple;
+    text-align: center;
+    margin-top: 100px;
+    position: absolute;
+    left: 25px;
+    top: -15px;
+    right: 75px;
+    left: 75px;
+    transform: rotate(-20deg);
+}
+
+button {
+    background-color: black;
+    color: whitesmoke;
+    border: darkgrey 2px solid;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition-duration: 0.3s;
+    margin: 10px;
+    outline-color: black;
+    
+}
+
+button:hover {
+    background-color: darkgrey;
+    color: whitesmoke;
+    border: black 2px solid;
+}
+
+#user-add {
+    margin: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+
+#user-add-text {
+    color: aqua;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+
+#add-button {
+    margin-left: 0px;
+    margin-top: 20px;
+    text-align: center;
+    outline-color: black;
+    border: darkgrey 2px solid;
+
+}
+
+text {
+    color: white;
+}
+
+.button-container {
+    margin: 150px 20px 20px;
+}
+
+.gifs-and-add-button {
+    margin: 50px 20px 20px;
+}
+
+#pop-gifs {
+    margin: 50px 20px 20px;
+
+}
+
+#add-button {
+    margin: 50px 20px 20px;
+    width: 0 auto;
+}

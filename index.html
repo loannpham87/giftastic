@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GifTastic</title>
+
+    <!-- CSS Reset Sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Our own CSS Sheet -->
+    <link rel="stylesheet" href="assets\css\style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Acme|Exo+2|Gugi|PT+Sans|Rajdhani" rel="stylesheet">
+
+    <!-- giphy favicon -->
+    <link rel="shortcut icon" type="image/png" href="http://www.giphy.com/favicon.ico"/>
+
+ 
+</head>
+
+<body onload="tastic()">
+
+    <!-- array of buttons populate at the top of the page for specific searches, need a loop, when a button is clicked, that is when the 10 gifs will populate 
+    each button click should populate 10 gifs
+    each gif should populate its rating above the gif
+    gifs should be still until user clicks the gif, user clicks triggers animation
+    if user clicks on a different tag, it should clear the page of the previous gifs and populate page with the newest tag clicked
+    need an input box and submit button with "add a..." text above input box for users to add their own button 
+    when the user enters input into the box, it should push their text into the array -->
+    <header id="gif">GIF</header>
+    <h1 id="tastic">tastic</h1>
+
+    <div class="button-container">
+        <div class="row">
+            <div class="col-12">
+                <button data-thank-u-next="thank u, next" type="button">thank u, next</button>
+                <button data-boy-bye="boy bye" type="button">boy bye</button>
+                <button data-aint-nobody="ain't nobody got time for that" type="button">ain't nobody got time for that</button>
+                <button data-where-you-goin="where you goin" type="button">where you goin</button>
+                <button data-say-hello-to-my-little-friend="say hello to my little friend" type="button">say hello to my little friend</button>
+                <button data-no="no" type="button">no</button>
+                <button data-goodbye="goodbye" type="button">goodbye</button>
+                <button data-what="what" type="button">what</button>
+                <button data-goodnight="goodnight" type="button">goodnight</button>
+                <button data-dinner="dinner" type="button">dinner</button>
+                <button data-pay-attention-to-me="pay attention to me" type="button">pay attention to me</button>
+                <button data-yawn="yawn" type="button">yawn</button>
+                <button data-boring="boring" type="button">boring</button>
+                <button data-idiot="idiot" type="button">idiot</button>
+                <button data-money="money" type="button">money</button>
+                <button data-stop="stop" type="button">stop</button>
+                <button data-goodmorning="goodmorning" type="button">good morning</button>
+                <button data-wave="wave" type="button">wave</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="gifs-and-add-button">
+        <div class="row">
+
+            <div class="col-9" id="pop-gifs">
+                <div id="rating"></div>
+                    <!-- <text>gifs populate here</text> -->
+            </div>
+
+            <div class="col-2" id="add-button">
+                <p id="user-add-text">Add your own button: </p>
+                <input type="text" id="user-add">   
+                <button type="button" id="add-button">Add a button</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="assets\javascript\app.js"></script>
+</body>
+
+</html>
