@@ -26,39 +26,34 @@
  
 </head>
 
-<body onload="tastic()">
+<body>
 
-    <!-- array of buttons populate at the top of the page for specific searches, need a loop, when a button is clicked, that is when the 10 gifs will populate 
-    each button click should populate 10 gifs
-    each gif should populate its rating above the gif
-    gifs should be still until user clicks the gif, user clicks triggers animation
-    if user clicks on a different tag, it should clear the page of the previous gifs and populate page with the newest tag clicked
-    need an input box and submit button with "add a..." text above input box for users to add their own button 
-    when the user enters input into the box, it should push their text into the array -->
     <header id="gif">GIF</header>
     <h1 id="tastic">tastic</h1>
 
     <div class="button-container">
         <div class="row">
             <div class="col-12">
-                <button data-thank-u-next="thank u, next" type="button">thank u, next</button>
-                <button data-boy-bye="boy bye" type="button">boy bye</button>
-                <button data-aint-nobody="ain't nobody got time for that" type="button">ain't nobody got time for that</button>
-                <button data-where-you-goin="where you goin" type="button">where you goin</button>
-                <button data-say-hello-to-my-little-friend="say hello to my little friend" type="button">say hello to my little friend</button>
-                <button data-no="no" type="button">no</button>
-                <button data-goodbye="goodbye" type="button">goodbye</button>
-                <button data-what="what" type="button">what</button>
-                <button data-goodnight="goodnight" type="button">goodnight</button>
-                <button data-dinner="dinner" type="button">dinner</button>
-                <button data-pay-attention-to-me="pay attention to me" type="button">pay attention to me</button>
-                <button data-yawn="yawn" type="button">yawn</button>
-                <button data-boring="boring" type="button">boring</button>
-                <button data-idiot="idiot" type="button">idiot</button>
-                <button data-money="money" type="button">money</button>
-                <button data-stop="stop" type="button">stop</button>
-                <button data-goodmorning="goodmorning" type="button">good morning</button>
-                <button data-wave="wave" type="button">wave</button>
+                <div class="buttons-section">
+                    <button class="existing" data-type="thank u next" src="still" data-still="still" data-animate="animate" data-state="still">thank u next</button>
+                    <button class="existing" data-type="boy bye">boy bye</button>
+                    <button class="existing" data-type="ain't nobody got time for that">ain't nobody got time for that</button>
+                    <button class="existing" data-type="where you goin">where you goin</button>
+                    <button class="existing" data-type="say hello to my little friend">say hello to my little friend</button>
+                    <button class="existing" data-type="no">no</button>
+                    <button class="existing" data-type="goodbye">goodbye</button>
+                    <button class="existing" data-type="what">what</button>
+                    <button class="existing" data-type="goodnight">goodnight</button>
+                    <button class="existing" data-type="dinner">dinner</button>
+                    <button class="existing" data-type="pay attention to me">pay attention to me</button>
+                    <button class="existing" data-type="yawn">yawn</button>
+                    <button class="existing" data-type="boring">boring</button>
+                    <button class="existing" data-type="idiot">idiot</button>
+                    <button class="existing" data-type="money">money</button>
+                    <button class="existing" data-type="stop">stop</button>
+                    <button class="existing" data-type="goodmorning">good morning</button>
+                    <button class="existing" data-type="wave">wave</button>                
+                </div>
             </div>
         </div>
     </div>
@@ -66,16 +61,23 @@
     <div class="gifs-and-add-button">
         <div class="row">
 
-            <div class="col-9" id="pop-gifs">
-                <div id="rating"></div>
-                    <!-- <text>gifs populate here</text> -->
+            <div class="col-9">
+                <div><p class="rating">
+                    <!-- ratings populate here -->
+                </p></div>
+                <div id="pop-gifs"></div>
+                <!-- gifs populate here -->
             </div>
 
-            <div class="col-2" id="add-button">
-                <p id="user-add-text">Add your own button: </p>
-                <input type="text" id="user-add">   
-                <button type="button" id="add-button">Add a button</button>
+            <div class="col-2">
+                <form>
+                    <p class="add-text">Add your own button</p>
+                    <input type="text" class="user-text" value=""><br><br>
+                    <input type="submit" class="add-button" value="Add a button">
+                  </form>
             </div>
+
+           
 
         </div>
     </div>
